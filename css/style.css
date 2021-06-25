@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+    margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html,body{
+    width:100%;
+    height:100%;
+  
+    background-image: url(../images/back.jpg);
+    background-blend-mode:overlay(white,9);
+    background-repeat:repeat;
+    background-size: cover;
+}
+
+nav{
+  display:flex;
+  margin-right: 0;
+  
+}
+
+  .logo{
+    margin:10px 20px 20px 25px;
+    padding: 0 10% 0% 0%;
+   font-family: 'Lobster';
+   font-size: 2rem;
+   color:black;
+  }
+  
+  #check:checked ~ .checkbtn i:before{
+    content: "\f00d";
+  }
+  .list{
+    display: flex;
+    margin:20px 20px 0px 50%;
+  }
+  .list-items{
+    padding: 0px 20px 20px 20px;
+   
+  }
+  .list a{
+   
+   
+    color: black;
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: 550;
+    
+    text-transform:uppercase ;
+    margin-bottom: 0;
+    transition: all 3s ease-in-out;
+  }
+  .list .list-items:hover,a:hover{
+    text-decoration: underline 2px rgb(37, 37, 46);
+  }
+  .active{
+    text-decoration: underline 2px rgb(37, 37, 46);
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: black;
+ float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    margin:0px 30px 30px 0px;
+    width: 20%;
+  }
+  
+  #check{
+    display:none;
+  } 
+
+.header{ 
+  height: 300px;
+  width:100%;
+  background-image: url("../images/h1.jpg");
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: appear 10s ease-in-out;
+  animation-delay: 5s;
+  
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+.header-text{
+  padding: 0% 10% 20% 40%;
+  font-size: 2.5rem;
+  color: black;
+  
+}
+
+button{
+  height:50px;
+  width:150px;
+ background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  font-size: 1rem;
+  border: none;
+  color:yellow;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+button:hover{
+  background-color: rgba(3, 3, 3, 0.8);
+  transform: scale(0.9);
+}
+
+
+
+@keyframes appear{
+  0%{
+    background-image: url(../images/h1.jpg);
+  
+  }
+  100%{
+    background-image: url(../images/h2.jpg);
+    
+  }
+ 
+}
+.search-box{
+  background: white;
+  display: flex;
+  justify-content: flex-end;
+ align-items: center;
+  align-self: center;
+  border:2px solid black;
+  width:35%;
+  margin-left:35%;
+  padding-right: 1%;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+.search-input input[type='text']{
+  width:400px;
+  height:40px;
+  border:0;
+
+}
+.search-input input:focus{
+  outline: none;
+}
+.main-heading{
+  text-align: center;
+  margin:2% auto;
+  font-size: 3rem;
+  font-weight: bold;
+ background-color: rgba(0, 0, 0, 0.6);
+ color:yellow;
+}
+.set{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+ 
+       width:100%;
+       flex-wrap: wrap;
+}
+.card{
+  box-shadow: 0 3px 10px rgba(0,0, 0,0.2);
+  width:340px;
+  height:320px;
+  padding:10px 30px 10px 30px;
+ background: white;
+ border-radius: 5px;
+ margin: 5px 0;
+}
+.card a{
+  color: black;
+  text-decoration: none;
+}
+.card:hover{
+  transform: scale(0.98);
+  background: rgb(252, 231, 221);
+}
+.order-now{
+  text-align: center;
+  margin: 15px 0px;
+  font-size: 1.5rem;
+  font-weight: bold;
+ 
+}
+.order-now input[type='text']{
+  width:25%;
+  height:35px;
+}
+.text{
+  font-size: 2rem;
+}
+.order{
+ margin-left:10px;
+  height:30px;
+  width:80px;
+
+}
+footer{
+  background-color:rgba(0, 0, 0, 0.6);
+  color:white;
+  padding-top: 30px;
+  bottom: 0;
+}
+.foot-head{
+  margin-left:9%;
+  
+}
+.footer{
+  font-size: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+color:white;
+height:200px;
+padding:0px 20px 20px 20px;
+justify-content: center;
+align-items: center;
+}
+.foot1{
+  width:50%;
+  margin:5px 30px;
+}
+.foot2{
+  width:30%;
+  margin :5px 30px;
+}
+.foot2 ul{
+  display: flex;
+}
+.foot2 ul li{
+  margin:10px 20px 20px 10px;
+}
+.foot2 ul li i{
+  color:white;
+}
+.foot2 ul li i:hover{
+  color:blue;
+}
+@media (max-width:1300px) and (min-width:768px) {
+  
+  .header-text{
+    font-size: 2rem;
+  }
+  .search-box{
+    overflow:hidden;
+
+  }
+  .list{
+    margin-left:28%;
+  }
+}
+
+@media(max-width:768px) and (min-width:400px){
+  .header-text{
+    font-size:2rem;
+    padding:1% 2% 2% 25%;
+  }
+  .list{
+    margin-left:28%;
+  }
+  .search-box{
+    width:65%;
+    justify-content:flex-end;
+    align-items: center;
+   margin-left: 20%;
+   padding-right: 2%;
+   padding-left: 0;
+   overflow: hidden;
+  }
+ 
+    
+  .search-input input[type='text']{
+    width:280px;
+    padding-left: 0;
+    
+  }
+  .icon{
+    margin-left: 30%;
+  }
+ 
+} 
+
+
+  @media(max-width:400px){
+    
+    nav{
+      margin-right: 0;
+    }
+    .checkbtn{
+      display:block;
+     margin-left: 25%;
+     color:black;
+     margin-right: 0;
+     padding-right: 0;
+     padding-top: 0;
+    }
+    .logo{
+      margin-left: 5%;
+      margin-right:20%;
+      margin-top:6%;
+    }
+    
+   
+    .list{
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+right:-100%;
+height:25%;
+width:40%;
+background-color:rgb(253, 251, 251);
+transition: all 0.5s;
+padding: 20px 0px 10px 0px;
+text-align: center;
+margin:70px 0px 0px 0px;
+
+    }
+    .lists a {
+      color:black;
+      
+      margin: 0;
+    }
+    .list a:hover{
+      transform: scaleX(0.98);
+      color:rgb(97, 96, 96);
+    }
+    #check:checked ~ .list{
+      right:0;
+      
+    }
+    .header-text{
+      padding:0% 0% 0% 19%;
+      font-size:1.5rem;
+
+    }
+    .search-box{
+      width:80%;
+      margin-right: 10%;
+      margin-left:auto;
+      padding-right: 2%;
+      padding-left:0;
+      justify-content:center;
+    }
+    .search-input input[type='text']{
+      width:80%;
+     margin-left: 0;
+    }
+    .search-input{
+      margin-left: 0;
+    }
+    button{
+     height:30px;
+    width:130px;
+    }
+    .card{
+      padding:10px 10px;
+      width:300px;
+    }
+    .order-now input[type='text']{
+      width:55%;
+      height:35px;
+    }
+    footer{
+      height:400px;
+      padding:0px;
+    }
+    .footer{
+      justify-content: center;
+      align-items: center;
+      display:block;
+      padding:30px 0 10px 20px;
+     
+    }
+    .foot1{
+      padding:0%;
+      margin:20px 0px 0px 20px;
+      width:80%;
+    }
+    .foot2{
+      padding:0%;
+      margin:40px 0px 0px 20px;
+      width:80%;
+    }
+
+    
+  }
+  
+
+  .blank{
+    right:0;
+    background-size: cover;
+    width:100%;
+    margin-right: 0;
+    
+  }
+ 

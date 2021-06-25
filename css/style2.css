@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+    margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html,body{
+    width:100%;
+    height:100%;
+    background-image:url(../images/back.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+   
+    
+}
+body{
+  background-image:url(../images/back.jpg);
+
+}
+nav{
+  display:flex;
+  margin-right: 0;
+  
+ height:60px;
+}
+
+  .logo{
+    margin:10px 20px 20px 25px;
+    padding: 0 10% 0% 0%;
+   font-family: 'Lobster';
+   font-size: 2rem;
+   color:black;
+  }
+  
+  #check:checked ~ .checkbtn i:before{
+    content: "\f00d";
+  }
+  .list{
+    display: flex;
+    margin:20px 20px 0px 50%;
+  }
+  .list-items{
+    padding: 0px 20px 20px 20px;
+   
+  }
+  .list a{
+   
+   
+    color: black;
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: 550;
+    
+    text-transform:uppercase ;
+    margin-bottom: 0;
+    transition: all 3s ease-in-out;
+  }
+  .list .list-items:hover,a:hover{
+    text-decoration: underline 2px rgb(37, 37, 46);
+  }
+  .active{
+    text-decoration: underline 2px rgb(37, 37, 46);
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: black;
+ float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    margin:0px 30px 30px 0px;
+    width: 20%;
+  }
+  
+  #check{
+    display:none;
+  } 
+.header1{
+  background:linear-gradient(rgba(255, 255, 255, 0.432),rgba(255, 255, 255, 0.432)),url(../images/h3.svg) ;
+  height:300px;
+  box-sizing: border-box;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+.contact-info:hover,.map:hover,.e-mail:hover{
+  transform: scaleY(0.98);
+}
+
+.contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+width:100%;
+background-color: rgba(255, 255, 255, 0.432);
+}
+.contact-info{
+  width:300px;
+  height:400px;
+  margin:10px 20px 10px 10px;
+  background-color:white;
+  padding: 5% 5% 5% 5%;
+  color:black;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0,0, 0,0.2);
+}
+.contact-info a{
+  color:black;
+  text-decoration: none;
+}
+.contact-info a:hover{
+  color: blue;
+}
+.map{
+  width:300px;
+  margin:10px 20px 10px 10px;
+  background-color:white;
+  padding: 0;
+}
+.e-mail{
+ width:300px;
+  height:400px;
+  margin:10px 20px 10px 10px;
+  background-color:white;
+  padding: 5% 5% 5% 5%;
+  color:black;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgba(0,0, 0,0.2);
+}
+.mail input[type='text']{
+width:100%;
+height:25px;
+margin:10px 0;
+}
+button{
+  padding:10px 10px;
+  background-color: black;
+  color:yellow;
+  cursor: pointer;
+  border-radius: 10px;
+}
+button:hover{
+  background-color: rgb(78, 78, 78);
+}
+/* aboutus */
+#about{
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.432);
+
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+padding:20px 20px 20px 10%;
+  width:100%;
+ 
+  text-align: center;
+}
+.aboutus{
+ 
+  width:330px;
+ font-size: 1.2rem;
+ height: 400px;
+ animation: slideInfromLeft 1s ease-in;
+}
+.about-img{
+height:400px;
+  padding:20px 20px 20px 20px;
+  width:50%;
+  animation: slideInfromRight 1s ease-in;
+}
+@keyframes slideInfromLeft{
+  0%{
+     transform :translateX(-100%);
+  }
+  100%{
+       transform :translateX(0%);
+  }
+}
+@keyframes slideInfromRight{
+  0%{
+      transform :translateX(100%);
+  }
+  100%{
+      transform :translateX(0%);
+  }
+}
+.our-team{
+ padding:50px 20px 20px 20px;
+  background-color: rgba(255, 255, 255, 0.432);
+
+}
+.team{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin:0px 150px;
+}
+.item{
+  padding:20px 20px 20px 40px;
+  color:black;
+  font-weight: bold;
+  height:100px;
+  width:100px;
+  padding-top: 10px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin:10px 50px 50px 50px;
+}
+#name{
+  margin-bottom: 20px;
+}
+footer{
+  background-color: rgba(0,0, 0,0.6);
+  color:white;
+  padding-top: 30px;
+  bottom: 0;
+}
+.foot-head{
+  margin-left:9%;
+  
+}
+.footer{
+  font-size: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+color:white;
+height:200px;
+padding:0px 20px 20px 20px;
+justify-content: center;
+align-items: center;
+}
+.foot1{
+  width:50%;
+  margin:5px 30px;
+}
+.foot2{
+  width:30%;
+  margin :5px 30px;
+}
+.foot2 ul{
+  display: flex;
+}
+.foot2 ul li{
+  margin:10px 20px 20px 10px;
+}
+.foot2 ul li i{
+  color:white;
+}
+.foot2 ul li i:hover{
+  color:blue;
+}
+@media (max-width:1300px) and (min-width:768px) {
+  
+  .header-text{
+    font-size: 2rem;
+  }
+}
+
+@media(max-width:768px) and (min-width:400px){
+ 
+  .list{
+    margin-left: 28%;
+  }
+ 
+}
+
+
+@media(max-width:400px){
+    
+    nav{
+      margin-right: 0;
+    }
+    .checkbtn{
+      display:block;
+     margin-left: 25%;
+     color:black;
+     margin-right: 0;
+     padding-right: 0;
+     padding-top: 0;
+    }
+    .logo{
+      margin-left: 5%;
+      margin-right:20%;
+      margin-top:6%;
+    }
+    
+   
+    .list{
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+right:-100%;
+height:25%;
+width:40%;
+background-color:rgb(253, 251, 251);
+transition: all 0.5s;
+padding: 20px 0px 10px 0px;
+text-align: center;
+margin:70px 0px 0px 0px;
+
+    }
+    .lists a {
+      color:black;
+      
+      margin: 0;
+    }
+    .list a:hover{
+      transform: scaleX(0.98);
+      color:rgb(97, 96, 96);
+    }
+    #check:checked ~ .list{
+      right:0;
+      
+    }
+    .about-img img{
+     display: none;
+    }
+    .about-img{
+      display: none;
+    }
+    .our-team{
+      padding-top: 150px;
+    }
+    footer{
+      height:400px;
+      padding:0px;
+    }
+    .footer{
+      justify-content: center;
+      align-items: center;
+      display:block;
+      padding:30px 0 10px 20px;
+     
+    }
+    .foot1{
+      padding:0%;
+      margin:20px 0px 0px 20px;
+      width:80%;
+    }
+    .foot2{
+      padding:0%;
+      margin:40px 0px 0px 20px;
+      width:80%;
+    }
+
+    
+}
+.blank{
+    right:0;
+    background-size: cover;
+    width:100%;
+    margin-right: 0;
+}
