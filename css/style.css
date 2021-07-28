@@ -448,3 +448,11 @@ margin:40px 0px 0px 0px;
         
       }
     }
+    @media (max-width:300px){
+      .cards{
+        width:250px;
+      }
+      .checkbtn{
+        margin-left: 30%;
+      }
+    }
